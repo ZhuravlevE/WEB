@@ -2,7 +2,7 @@
 Запуск инстансов: dotnet run --urls=http://localhost:5001/
 ```
 
-###Доступ к апи сервера напрямую
+### Доступ к апи сервера напрямую
 
 ```
 zhyra@zhyra:~$ ab -c 10 -n 10000 http://localhost:5001/api/Ad
@@ -61,7 +61,7 @@ Percentage of the requests served within a certain time (ms)
  100%     21 (longest request)
 ```
 
-###Доступ к апи сервера напрямую, когда развернуто на 3х портах
+### Доступ к апи сервера напрямую, когда развернуто на 3х портах
 
 ```
 zhyra@zhyra:~$ ab -c 10 -n 10000 http://localhost:5002/api/Ad
@@ -120,7 +120,7 @@ Percentage of the requests served within a certain time (ms)
  100%    102 (longest request)
 ```
 
-###Без балансировки
+### Без балансировки
 
 ```
 zhyra@zhyra:~$ ab -c 10 -n 9000 http://localhost/api/v1/Ad
@@ -180,7 +180,7 @@ Percentage of the requests served within a certain time (ms)
  100%    329 (longest request)
 ```
 
-###С балансировкой
+### С балансировкой
 
 ```
 zhyra@zhyra:~$ ab -c 10 -n 9000 http://localhost/api/v1/Ad
